@@ -79,6 +79,7 @@ const Sidebar = () => {
                   <Link
                     href={link.href}
                     className="flex items-center justify-start px-2  text-sm bg-opacity-90 text-white space-x-1"
+                    key={link.name}
                   >
                     <Image
                       className="w-5 h-5"
