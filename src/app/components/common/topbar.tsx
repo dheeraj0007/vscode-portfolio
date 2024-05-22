@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TopBar = () => {
   return (
-    <div className="h-8  items-center py-2 bg-[#1f2428] text-white text-sm ">
+    <div className="h-8  items-center py-2 bg-[#21272d]  text-white text-sm ">
       <div className="flex space-x-5 ">
         <Image
           src="/icons/vscode_icon.svg"
