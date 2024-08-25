@@ -21,12 +21,14 @@ const NavigationBar = ({ className }: { className?: string }) => {
         <div
           key={link.name}
           className={`${
-            activeLink === link ? "border-t-2 border-orange-500" : ""
-          } text-white flex`}
+            activeLink === link ? "border-t-2 border-orange-500 " : ""
+          } text-white flex `}
         >
           <Link
             href={link.href}
-            className="flex items-center justify-center px-2 py-1 space-x-2 text-sm w-32 h-8 bg-opacity-90"
+            className={`flex items-center justify-center px-2 py-1 space-x-2 text-sm w-32 h-8 ${
+              activeLink === link ? "bg-[#151c25]" : "bg-[#1d222c]"
+            }`}
           >
             <Image
               className="w-5 h-5"

@@ -30,14 +30,14 @@ const Sidebar = () => {
   const activeLink = sideLinks.find((link) => link.href === route);
   return (
     <div className="w-72 h-[92vh] flex ">
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         {sideLinks.map((link) => {
           return (
             <Link
               href={link.href}
               className={`${
                 activeLink === link
-                  ? "border-l-2 border-white bg-[#0e1018] "
+                  ? "border-l-2 border-white bg-[#0e1018]"
                   : ""
               } px-3 py-3 w-fit`}
               key={link.href}
@@ -47,7 +47,7 @@ const Sidebar = () => {
           );
         })}
       </div>
-      <div className="px-5 py-2">
+      <div className="px-5 py-2 bg-[#12141d] w-60">
         <h1 className="text-gray-100 ">EXPLORER</h1>
         <div className="mt-3">
           <input
